@@ -1,0 +1,340 @@
+body{
+  background-color: #dae6e4;
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+.pro_header
+{
+  margin: 5px;
+  padding: 4px;
+  background-color: white;
+}
+.product_back{
+  background-color: white;
+  padding: 10px;
+  margin: 8px 0px;
+  border-radius: 4px;
+}
+.top_product{
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  background-color: white;
+  border-bottom:1px solid gray;
+}
+.top_product h3{
+  display: inline;
+  padding: 8px;
+}
+.buttom_product{
+    padding: 8px;
+    background-color: white;
+}
+.buttom_product a{
+  width: auto;
+  display: flex;
+ justify-content: center;
+ 
+}
+.top_product a span{
+  font-size: 24px;
+}
+.product{
+  width: 99%;
+  height:auto;
+  margin: 8px 0 0 0;
+  box-shadow: 0px 5 8 rgb(0,0,0,0.5);
+  background-color: white;
+  transition: 0.2s;
+  padding: 2px;
+  box-shadow: 0px 0px 10px rgb(0,0,0,0.2);
+}
+.product img{
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  padding: 0px;
+}
+.product .product_detail_show
+{
+  width: 100%;
+  height: 50%;
+}
+.product:hover{
+  transform: scale(1.01);
+}
+.product button
+{
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  background-color: #0069D9;
+  outline: none;
+  border: none; 
+  color: white;
+}
+.product h4{
+   text-align: center;
+   padding: 0px 8px;
+}
+.product p{
+  text-align: center;
+  padding: 0px 10px;
+}
+.product button:hover{
+  opacity: 0.6;
+}
+
+.image_logo{
+  width: 100%;
+  height: 300px;
+  margin: 0px;
+  padding: 0px;
+}
+.image_logo img{
+  width: 100%;
+  height: 100%;
+}
+.fixed{
+  position: fixed;
+  top: 0px;
+}
+.button_login_flex
+{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+}
+.button_login_flex button{
+  width: 100%;
+  border: none;
+  border-radius: 0px;
+  margin: 2px;
+}
+.modal-body{
+  padding: 10px;
+  border-radius: 4px;
+  background-color:#E6EBEF;
+}
+.modal-header
+{
+  background-color: #E6EBEF;
+}
+.price{
+  font-size: 22px;
+  color: gray;
+}
+.navbar{
+  z-index: 1;
+  background-color: white;
+  margin: 8px 0px;
+  width: 100%;
+  height: auto;
+}
+ .navbar-nav{
+  padding: 0px;
+  margin: 0px;
+}
+.navbar-nav .navbar-item{
+  margin: 0px;
+}
+.navbar-nav .nav-item .nav-link{
+  color: black;
+}
+.navbar-nav .navbar-item a:hover{
+  color: black;
+
+}
+.footer{
+  background-color:  #002147;
+  height: 200px;
+  margin: 0px;
+  padding: 20px;
+  color:white;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #CCCCCC;
+
+}
+.footer-bottom{
+  background-color:#002147 ;
+  color:white;
+  margin: 0px;
+}
+
+
+//--signup---
+.signup{
+  width: 45%;
+  height: auto;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #d5dbd6;
+  border-radius: 8px;
+  box-shadow: 0px 8px 7px rgba(0, 0, 0, 0.2);
+}
+.signup .signupheader{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.signupheader h3{
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.signup form{
+  padding: 10px;
+}
+.btnsignup{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.btnsignup input[type=submit]{
+  width: 100%;
+  border-radius: 4px;
+}
+.btnsignup input[type=submit]:hover{
+  transform: scale(1.02);
+}
+.admincontroltop{
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgb(0,0,0,0.5);
+  border-radius: 8px;
+  margin-top: 10px;
+}
+ .controldiv
+{
+  width: 100%;
+  height: auto  ;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0px 0px 7px rgb(0,0,0,0.2);
+  padding: 10px;
+}
+.controldiv table{
+  width: 50%;
+}
+.controldiv table tr td{
+  padding: 6px;
+}
+.controldiv a{
+  width: 100%;
+  padding: 6px 8px;
+  background-color:#01477B;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  transition: 0.2s;
+}
+.controldiv a:hover{
+  transform: scale(1.02);
+}
+.admincontrolbutton{
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+  margin:10px 0px;
+  padding: 8px;
+  border-radius: 8px;
+}
+.admincontrolbutton table
+{
+  width: 100%;
+}
+.adminheader
+{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0px;
+}
+.admincontrolbutton table tr td a{
+   width: 40%;
+   height: auto;
+   margin:0px 10px;
+}
+.footer_brand{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+footer{
+  width: 100%;
+  height: auto;
+}
+.top_dash_board{
+  width: 100%;
+  height: 30vh;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgb(0,0,0,0.2);
+}
+.top_dash_board .part_dashboard{
+   width: 100%;
+   height: 100%;
+   background-color: white;
+   box-shadow: 0px 0px 10px rgb(0,0,0,0.2);
+}
+
+// product-detail
+.products{
+  border-radius: 5px;
+  padding: 8px;
+  background-color: white;
+  margin: 10px;
+}
+.product_img{
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  padding: 10px;
+}
+.product_img img{
+  width: 100%;
+  height: 100%;
+}
+.product_detail{
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.product_detail table{
+  width: 80%;
+  height: 100%;
+  
+}
+.product_detail table tr:nth-child(1)
+{
+  background-color: lightskyblue;
+}
+.post{
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%,0%);
+  width: 40%;
+  height: auto;
+  background-color: #dae6e4;
+  box-shadow: 0px 0px 15px rgb(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 10px;
+}
+.post p{
+  display: flex;
+  justify-content: center;
+}
+.post form{
+  width: 100%;
+  height: auto;
+}
+
+

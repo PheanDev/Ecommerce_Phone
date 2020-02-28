@@ -1,0 +1,18 @@
+string impID = txtImportID.Text;
+            string impDate = txtImportDate.Value.ToShortDateString();
+            double impAmount = double.Parse(txtImportAmount.Text);
+            double impPrice = double.Parse(txtImportPrice.Text);
+            double impTTprice = double.Parse(txtImportTotalPrice.Text);
+            string companyID = cboCompanyName.SelectedValue.ToString();
+            string productID = cboProductID.SelectedValue.ToString();
+            string deliveryName = txtDeliveryName.Text;
+            string deliveryPhone = txtDeliveryPhone.Text;
+            ClsImport imp = new ClsImport(impID, user, productID, companyID, impDate, impAmount, impPrice, impTTprice, deliveryName, deliveryPhone);
+            Status message=cnn.insertImport(imp);
+            if (message.retcode.Equals("1"))
+            {
+                MessageBox.Show(message.message, "InsertImport", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dgv.Rows.Add(impID, cboCompanyName.SelectedItem.ToString(), cboProductID.SelectedItem.ToString(),impDate, deliveryName, deliveryPhone,carID,impAmount, impPrice, impTTprice);
+            }
+            else
+                MessageBox.Show(message.message, "InsertImport", MessageBoxButtons.OK, MessageBoxIcon.Information);
