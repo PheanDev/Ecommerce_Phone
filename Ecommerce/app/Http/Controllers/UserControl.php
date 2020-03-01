@@ -71,7 +71,6 @@ class UserControl extends Controller
     }
     function upload(Request $request)
     {
-        print_r($request->file());
         $this->validate($request,[
             'name'=>'required|string|max:255',
             'screen'=>'required|string:255',
@@ -113,7 +112,6 @@ class UserControl extends Controller
          $imagesave->imgName=$filename;
          $imagesave->save();
 
-         print_r($fileid);
          $product->imgID=$fileid;
          
          $product->save();

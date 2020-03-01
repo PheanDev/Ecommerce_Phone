@@ -11512,7 +11512,7 @@ body {
   background-color: white;
   margin: 8px 0px;
   width: 100%;
-  height: auto;
+  height: 40px;
 }
 
 .navbar-nav {
@@ -11526,10 +11526,16 @@ body {
 
 .navbar-nav .nav-item .nav-link {
   color: black;
+  margin: 0px;
 }
 
-.navbar-nav .navbar-item a:hover {
+.navbar-nav li a {
+  margin: 0px;
+}
+
+.navbar-nav li a:hover {
   color: black;
+  background-color: gray;
 }
 
 .footer {
@@ -11733,7 +11739,7 @@ footer {
 }
 
 .post {
-  position: absolute;
+  position: relative;
   top: 20px;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
